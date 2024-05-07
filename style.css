@@ -1,0 +1,187 @@
+:root {
+  --Lightslateblue: hsl(252, 100%, 67%);
+  --Lightroyalblue: hsl(241, 81%, 54%);
+  --Violetblue: hsla(256, 72%, 46%, 1);
+  --Persianblue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken Grotesk";
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-card {
+  display: flex;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 6px 6px 30px var(--Lightlavender);
+  border-radius: 25px;
+}
+.st-section {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Lightslateblue),
+    var(--Lightroyalblue) 80%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 30px 25px;
+  text-align: center;
+  width: 50%;
+  gap: 20px;
+}
+.st-section h4 {
+  color: var(--Lightlavender);
+}
+
+.st-section h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.st-section p {
+  color: var(--Lightlavender);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  margin-top: -20px;
+}
+.circle {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Violetblue),
+    var(--Persianblue) 95%
+  );
+  border-radius: 50%;
+  color: white;
+  padding: 35px 50px;
+  vertical-align: middle;
+}
+.circle h1 {
+  font-size: 50px;
+}
+.circle span {
+  color: hsla(241, 100%, 89%, 0.5);
+  font-size: 15px;
+}
+
+.nd-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px;
+  text-align: center;
+  width: 350px;
+  gap: 20px;
+}
+.nd-section h4 {
+  color: var(--Darkgrayblue);
+  align-self: flex-start;
+  font-size: 20px;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+img {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.rating {
+  color: var(--Darkgrayblue);
+  font-weight: 800;
+}
+.rating span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.6);
+}
+
+ul li {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.045);
+  color: var(--Lightred);
+}
+
+.memory {
+  color: var(--Orangeyyellow);
+  background-color: hsl(39, 100%, 56%, 0.045);
+}
+
+.verbal {
+  color: var(--Greenteal);
+  background-color: hsl(166, 100%, 37%, 0.045);
+}
+.visual {
+  color: var(--Cobaltblue);
+  background-color: hsl(234, 85%, 45%, 0.045);
+}
+
+.but {
+  width: 100%;
+  background-color: var(--Darkgrayblue);
+  color: white;
+  border-radius: 30px;
+  padding: 12px;
+}
+
+.but:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Lightslateblue),
+    var(--Lightroyalblue) 95%
+  );
+}
+
+@media screen and (max-width: 650px) {
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    background-color: white;
+    box-shadow: 6px 6px 30px var(--Lightlavender);
+    border-radius: 25px;
+  }
+  .st-section {
+    width: 100%;
+  }
+  .nd-section {
+    width: 100%;
+  }
+}
